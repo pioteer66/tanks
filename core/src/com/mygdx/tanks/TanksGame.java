@@ -39,7 +39,6 @@ public class TanksGame extends ApplicationAdapter {
 		zarosla = new Texture("zarosla.png");
 		cegly = new Texture("mur.png");
         czolg.setKierunek(Kierunek.LEWO);
-        czolg.setTekstura(czolg_czer_L);
         czolg.setPolozenieNaPlanszy(new Point(10*25, 800-10*25));
 	}
 
@@ -50,7 +49,7 @@ public class TanksGame extends ApplicationAdapter {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
         drawBoard();
-        batch.draw(czolg.getTekstura(), czolg.getPolozenieNaPlanszy().x, czolg.getPolozenieNaPlanszy().y);
+        batch.draw(, czolg.getPolozenie().x, czolg.getPolozenie().y);
         batch.end();
 	}
 
