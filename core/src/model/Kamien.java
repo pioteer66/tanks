@@ -6,7 +6,7 @@ public class Kamien extends Blok {
 
     public Kamien(int polozenieX, int polozenieY){
         super(polozenieX, polozenieY);
-        setWytrzymalosc(2);
+        setWytrzymalosc(100000);
         symbol = 'K';
     }
 }

@@ -1,10 +1,7 @@
 package model;
 
 
-import com.badlogic.gdx.graphics.Texture;
-
 import java.awt.*;
-import java.awt.geom.Point2D;
 
 /**
  * Created by Dawid on 2016-04-12.
@@ -49,11 +46,14 @@ public class Czolg extends Rectangle{
 
 
 
+
+
     public Czolg(int idGracza,int iloscZyc, int polozenieX, int polozenieY){
-        super(polozenieX,polozenieY,100,100);
+        //czy to nie jest szerokoscia i wysokoscia?
+        super(polozenieX,polozenieY,50,50);
         this.idGracza=idGracza;
         this.zycia=iloscZyc;
         this.czyWRuchu=false;
-        this.kierunek=Kierunek.GORA;
+        this.kierunek=Kierunek.LEWO;
     }
 }
